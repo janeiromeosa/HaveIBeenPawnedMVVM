@@ -34,12 +34,12 @@ public class HaveIBeenPawnedAdapter extends RecyclerView.Adapter<HaveIBeenPawned
     @Override
     public void onBindViewHolder(@NonNull PawnedViewHolder pawnedViewHolder, int position) {
         HaveIBeenPawnedRepo haveIBeenPawnedRepo = haveIBeenPawnedRepos.get(position);
-        pawnedViewHolder.tvName.setText(haveIBeenPawnedRepo.getName().toString());
-        pawnedViewHolder.tvTitle.setText(haveIBeenPawnedRepo.getTitle().toString());
-        pawnedViewHolder.tvDomain.setText(haveIBeenPawnedRepo.getDomain().toString());
-        pawnedViewHolder.tvBreachDate.setText(haveIBeenPawnedRepo.getBreachDate().toString());
-        pawnedViewHolder.tvAddedDate.setText(haveIBeenPawnedRepo.getAddedDate().toString());
-        pawnedViewHolder.tvModifiedDate.setText(haveIBeenPawnedRepo.getModifiedDate().toString());
+        pawnedViewHolder.tvName.setText(haveIBeenPawnedRepo.getName());
+        pawnedViewHolder.tvTitle.setText(haveIBeenPawnedRepo.getTitle());
+        pawnedViewHolder.tvDomain.setText(haveIBeenPawnedRepo.getDomain());
+        pawnedViewHolder.tvBreachDate.setText(haveIBeenPawnedRepo.getBreachDate());
+        pawnedViewHolder.tvAddedDate.setText(haveIBeenPawnedRepo.getAddedDate());
+        pawnedViewHolder.tvModifiedDate.setText(haveIBeenPawnedRepo.getModifiedDate());
     }
 
     @Override

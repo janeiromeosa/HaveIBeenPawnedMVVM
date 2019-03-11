@@ -25,7 +25,7 @@ public class HaveIBeenPawnedRepository extends Observable implements Observer, D
     }
 
     @Override
-    public void update(Observable o, Object result) {
+    public void update(Observable observable, Object result) {
         setChanged();
         notifyObservers(result);
     }
